@@ -24,7 +24,7 @@ function playRound(playerSelection, computerSelection) {
     result.innerHTML = `You win, you choise ${playerSelection} computer choise ${computerSelection}`;
   } else if (playerSelection === 'paper' && computerSelection === 'rock') {
     console.log(computRockChoise);
-
+    computRockChoise.style.backgroundColor = 'red';
     playerScore++;
     result.innerHTML = `You win, you choise ${playerSelection} computer choise ${computerSelection}`;
   } else {
@@ -38,18 +38,6 @@ function playRound(playerSelection, computerSelection) {
 let playerScore = 0;
 let computerScore = 0;
 
-// function game() {
-//   while (playerScore === 5 || computerScore === 5) {
-//     const computerSelection = computerPlay();
-//     console.log(playRound(playerSelection, computerSelection));
-//     console.log(playerScore);
-//   }
-//   if (playerScore > computerScore) {
-//     console.log(`You win ${playerScore} to ${computerScore}`);
-//   } else if (computerScore > playerScore) {
-//     console.log(`you loose ${computerScore} to ${playerScore}`);
-//   }
-// }
 let game = (playerSelection) => {
   const computerSelection = computerPlay();
   playRound(playerSelection, computerSelection);
@@ -64,4 +52,3 @@ let essais = buttons.forEach((button) => {
     game(playerSelection);
   });
 });
-game();
