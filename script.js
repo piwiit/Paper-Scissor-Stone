@@ -37,22 +37,22 @@ function playRound(playerSelection, computerSelection) {
     computerscissors.style.backgroundColor = 'red';
     playerRock.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer chose ${computerSelection}`;
   } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
     computerpaper.style.backgroundColor = 'red';
     playerScissors.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer chose ${computerSelection}`;
   } else if (playerSelection === 'paper' && computerSelection === 'rock') {
     computRockChoise.style.backgroundColor = 'red';
     playerPaper.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer chose ${computerSelection}`;
   } else {
     computerScore++;
     document.querySelector(`#computer${computerSelection}`).style.backgroundColor = 'red';
     document.querySelector(`#${playerSelection}`).style.backgroundColor = 'red';
-    result.innerHTML = `computer win, you chose ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `computer win, you chose ${playerSelection} computer chose ${computerSelection}`;
   }
   playerScoreShow.innerHTML = `score : ${playerScore}`;
   computerScoreShow.innerHTML = `score : ${computerScore}`;
