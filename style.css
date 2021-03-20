@@ -1,0 +1,86 @@
+/* reset */
+:root {
+  --background: #ededed;
+  --button-border: #333;
+  --button: #555;
+  --button-hover: #ff8c00;
+  --border: #222;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background-color: var(--border);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* general */
+
+.title {
+  color: var(--background);
+}
+
+.container {
+  display: flex;
+  flex-direction: row no-wrap;
+  justify-content: space-around;
+}
+
+.player {
+  margin-top: 0.5rem;
+}
+
+.information {
+  background-color: var(--background);
+  margin-top: 5rem;
+  border: 1px solid var(--title);
+  padding: 0 4rem;
+  border-radius: 30px;
+}
+
+.title-information {
+  padding: 2rem 0 4rem 0;
+}
+
+.button {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 6px;
+  border: 2px solid var(--button-border);
+  background-color: var(--button);
+  color: var(--background);
+  font-family: inherit;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.button :hover {
+  background-color: var(--button-hover);
+}
+
+#result {
+  background-color: var(--background);
+  border-radius: 1rem;
+  margin-top: 15rem;
+  padding-top: 4rem;
+  height: 15rem;
+  width: 20rem;
+  text-align: center;
+  vertical-align: center;
+}
+
+.footer,
+.footer a {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: var(--background);
+  text-decoration: none;
+}

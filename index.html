@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/25d75193a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">Rock Paper Scissors?</h1>
+    </div>
+    <div class="container">
+      <div class="player information">
+        <h2 class="title-information">Player</h2>
+        <div class="playerinformation">
+          <div class="playerlogo">
+            <img class="logo" src="./picture/user.png" />
+          </div>
+          <div class="playerscore">
+            <p class="score" id="playerscore"></p>
+          </div>
+        </div>
+        <div class="choise">
+          <button id="rock" class="player button"><i class="far fa-hand-rock"></i></button>
+          <button id="scissors" class="player button"><i class="far fa-hand-scissors"></i></button>
+          <button id="paper" class="player button"><i class="far fa-hand-paper"></i></button>
+        </div>
+      </div>
+      <div id="result"></div>
+      <div class="bot information">
+        <h2 class="title-information">Computer</h2>
+        <div class="computerinformation">
+          <div class="computerlogo">
+            <img class="logo" src="./picture/robot-logo.png" />
+          </div>
+          <div class="computerscore">
+            <p class="score" id="computerscore"></p>
+          </div>
+        </div>
+        <div class="choise">
+          <button id="computerrock" class="button"><i class="far fa-hand-rock"></i></button>
+          <button id="computerscissors" class="button"><i class="far fa-hand-scissors"></i></button>
+          <button id="computerpaper" class="button"><i class="far fa-hand-paper"></i></button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a class="text-dark" href="https://www.linkedin.com/in/jonathan-bouillaux-810b831a1/">
+          © 2020 Copyright : BouillauxJonathan</a
+        >
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
