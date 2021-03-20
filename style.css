@@ -62,10 +62,6 @@ body {
   outline: none;
 }
 
-.button :hover {
-  background-color: var(--button-hover);
-}
-
 #result {
   background-color: var(--background);
   border-radius: 1rem;
