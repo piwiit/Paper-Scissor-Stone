@@ -28,30 +28,31 @@ function playRound(playerSelection, computerSelection) {
   playerPaper.style.backgroundColor = '#555';
   playerScissors.style.backgroundColor = '#555';
 
+  // all conditions
   if (playerSelection === computerSelection) {
-    result.innerHTML = `draw you choise ${playerSelection} like computer`;
+    result.innerHTML = `draw you chose ${playerSelection} like computer`;
     document.querySelector(`#computer${computerSelection}`).style.backgroundColor = 'red';
     document.querySelector(`#${playerSelection}`).style.backgroundColor = 'red';
   } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
     computerscissors.style.backgroundColor = 'red';
     playerRock.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you choise ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
   } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
     computerpaper.style.backgroundColor = 'red';
     playerScissors.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you choise ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
   } else if (playerSelection === 'paper' && computerSelection === 'rock') {
     computRockChoise.style.backgroundColor = 'red';
     playerPaper.style.backgroundColor = 'red';
     playerScore++;
-    result.innerHTML = `You win, you choise ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `You win, you chose ${playerSelection} computer choise ${computerSelection}`;
   } else {
     computerScore++;
     document.querySelector(`#computer${computerSelection}`).style.backgroundColor = 'red';
     document.querySelector(`#${playerSelection}`).style.backgroundColor = 'red';
-    result.innerHTML = `computer win, you choise ${playerSelection} computer choise ${computerSelection}`;
+    result.innerHTML = `computer win, you chose ${playerSelection} computer choise ${computerSelection}`;
   }
   playerScoreShow.innerHTML = `score : ${playerScore}`;
   computerScoreShow.innerHTML = `score : ${computerScore}`;
@@ -66,6 +67,7 @@ const game = (playerSelection) => {
   playRound(playerSelection, computerSelection);
 };
 
+// select button to start game
 const buttons = document.querySelectorAll('.button');
 const startround = buttons.forEach((button) => {
   button.addEventListener('click', () => {
